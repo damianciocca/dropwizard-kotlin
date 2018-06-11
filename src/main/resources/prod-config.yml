@@ -1,0 +1,19 @@
+server:
+  applicationConnectors:
+   - type: http
+     port: 8080
+
+logging:
+  level: INFO
+
+categoriesFolderPath: "/home/ubuntu/server/images/256_ObjectCategories"
+metacategoriesFilePath: "/home/ubuntu/server/images/metacategories.txt"
+cacheFilesPath: "/home/ubuntu/server/images/cache"
+
+useSvgExport: true
+
+database:
+  driverClass: org.sqlite.JDBC
+  user: sqlite
+  password: sqlite
+  url: jdbc:sqlite:tindercrack.db

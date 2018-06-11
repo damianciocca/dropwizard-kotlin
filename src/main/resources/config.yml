@@ -1,0 +1,23 @@
+server:
+  applicationConnectors:
+   - type: http
+     port: 8080
+  adminConnectors:
+    - type: http
+      port: 8081
+
+logging:
+  level: INFO
+
+categoriesFolderPath: "/Users/federicodangelo/Desktop/images/256_ObjectCategories"
+#categoriesFolderPath: "D://Downloads//Datasets//256_ObjectCategories"
+metacategoriesFilePath: "/Users/federicodangelo/Documents/Proyectos/Prototypes-TinderCrack-Server/src/main/resources/metacategories.txt"
+cacheFilesPath: "/Users/federicodangelo/Desktop/images/cache"
+
+useSvgExport: true
+
+database:
+  driverClass: org.sqlite.JDBC
+  user: sqlite
+  password: sqlite
+  url: jdbc:sqlite:tindercrack.db
